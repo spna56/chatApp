@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSockets 101</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        #output {
+            height: 200px;
+        }
+
+        #feedback {
+            height: 10px
+        }
+
+        .jumbotron {
+            height: 100px
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="mario-chat">
+        <div class="jumbotron">
+            <h3>Simple Chat App</h3>
+        </div>
+        <div id="chat-window">
+
+
+            <div id="form">
+                <input class="form-control" type="text" id="handle" placeholder="User">
+            </div>
+            <br>
+
+            <div id="feedback"></div>
+        </div><br>
+        <div class="card">
+
+            <div id="output"></div>
+
+        </div><br>
+        <input class="form-control" type="text" id="message" placeholder="Message"><br>
+        <button class="btn btn-primary btn-lg " id="send">Send</button>
+    </div>
+    </div>
+    <script src="/chat.js"></script>
+</body>
+
+</html>
